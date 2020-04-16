@@ -1,0 +1,12 @@
+<script>
+
+let m="irc.undernet.net 000 privmsg :- hello world http://hello.io";
+
+let f=(s,[a,...b]=s.split(/ +:/))=>a.split` `.concat(b);
+
+let a=f(m);
+
+a.forEach(e=>document.write(e+"<br/>"))
+
+
+</script>
